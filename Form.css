@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500&family=Borel&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Vithkuqi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,300;1,400;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    position: relative;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+}
+.login a{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 15px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+}
+.login a i{
+    margin-right: 7px;
+}
+.login a:hover{
+    opacity: .7;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+    height: 40px;
+}
+.logo .cubes{
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+    font-size:25px;
+}
+
+section{
+    height: 100vh;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+}
+
+.one{
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+}
+.one h1{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    user-select: none;
+}
+.part{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.part input{
+    width: 95%;
+    height: 45px;
+    font-size: 17px;
+    padding: 10px;
+}
+.part label , .part1 label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+}
+.part1 input{
+    height: 45px;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: 25px;
+    font-size: 17px;
+    padding: 10px;
+}
+
+input[type='submit']{
+    width:50%;
+    height: 35px;
+    border-radius:5px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 25%;
+    margin-top: 25px;
+    background-color:green;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input:focus{
+    outline: 1px solid green;
+}
+
+input[type='checkbox']{
+    width: 18px;
+    height: 18px;
+    accent-color: green;
+}
+input[type='checkbox']:focus{
+    outline: none;
+}
+
+@media only screen and (max-width:768px) {
+    .logo .cubes{
+        display: none;
+    }
+    section{
+        padding-top: 25%;
+    }
+    .one{
+        width: 500px;
+        height: 560px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .logo .cubes{
+        display: none;
+    }
+    .login a{
+        display: none;
+    }
+}
