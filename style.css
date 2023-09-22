@@ -96,12 +96,12 @@ header{
     position: absolute;
     bottom: 0px;
     padding: 10px 40px;
-    background-color: rgb(179, 179, 179);
+    background-color:#fff;
     display: none;
 }
 .headerlow a{
     text-decoration: none;
-    color: rgb(233, 233, 233);
+    color: rgb(179, 179, 179);
     font-size: 18px;
     text-align: center;
     display: flex;
